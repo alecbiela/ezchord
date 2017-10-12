@@ -1,0 +1,22 @@
+{
+  "name": "chordversion",
+  "version": "1.0.1",
+  "description": "A Web Service for IGME330 Project III",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "echo \"Tests complete\""
+  },
+  "author": "Alec Bielanos",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "chord-magic": "^1.0.0",
+    "request": "^2.78.0"
+  },
+  "devDependencies": {
+    "express": "^4.16.2",
+    "ultimate-guitar-scraper": "^0.3.4",
+    "yql": "^1.0.2"
+  }
+}
