@@ -1,0 +1,9 @@
+10.12.17
+-Added original files from IGME330 Submission
+-Installed all current packages as dependencies
+
+-Moved old searching code to separate file, will edit later
+-Migrated all server side code to ES6 syntax (except for above)
+  > Old front-end was static hosted, now all integrated into node
+-Added routing module with proper routing for index, css, and 404
+
