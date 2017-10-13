@@ -3,12 +3,10 @@
 <head>
     <title>EZChord - By Alec Bielanos</title>
 	<link rel="stylesheet" href="/mainStyle.css" type="text/css" />
-	<!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Lato" rel="stylesheet">
-	<link rel="stylesheet" href="styles/mainStyle.css" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-	</script>
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Lato" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script async type="text/javascript" src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
-	<script type="text/javascript" src="js/main.js"></script> -->
+	<script type="text/javascript" src="/main.js"></script>
 </head>
 <body>
 	<section id="content">
@@ -19,7 +17,7 @@
 		<section id="searchBox">	
 			<p>Enter an artist, song, or both!</p>
 			<!-- Switch the localhost url with heroku server -->
-			<form id="proxyForm" action="https://chordversion.herokuapp.com" method="GET">
+			<form id="proxyForm" action="/searchForTabs" method="GET">
 				<label for="bName">Artist: </label>
 				<input type="text" name="bName" id="bName">
 				<label for="sName">Song: </label>

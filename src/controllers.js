@@ -1,6 +1,6 @@
 //controllers.js
 //handles requests
-
+const searcher = require('./tabSearcher.js');
 const path = require('path');
 
 // returns index.html page
@@ -13,7 +13,25 @@ const loadCSS = (req, res) => {
   res.sendFile(path.resolve(`${__dirname}/../client/styles/mainStyle.css`));
 };
 
+//loads font
+const loadFont = (req, res) => {
+  res.sendFile(path.resolve(`${__dirname}/../client/styles/gemelli.TTF`));
+};
+
+//loads main.js
+const loadJS = (req, res) => {
+  res.sendFile(path.resolve(`${__dirname}/../client/js/main.js`));
+};
+
+//searches for a tab
+const searchTabs = (req, res) => {
+  searcher(req, res);
+};
+
 module.exports = {
   loadCSS,
   getIndex,
+  loadFont,
+  loadJS,
+  searchTabs
 };

@@ -1,3 +1,10 @@
+10.13.17
+-Added js back to frontend
+  > Backend router handles js file and font file
+-Ported tab search functionality (converted to ES6)
+-Removed client.html test file
+
+
 10.12.17
 -Added original files from IGME330 Submission
 -Installed all current packages as dependencies

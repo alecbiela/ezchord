@@ -5,8 +5,11 @@ const controllers = require('./controllers.js');
 
 const router = (app) => {
   app.get('/mainStyle.css', controllers.loadCSS);
+  app.get('/gemelli.ttf', controllers.loadFont);
+  app.get('/main.js', controllers.loadJS);
+  app.get('/searchForTabs', controllers.searchTabs);
   app.get('/', controllers.getIndex);
-  app.get('/*', (req, res) => { res.send('404 Error', 404); } );
+  app.get('/*', (req, res) => { res.status(404).send('Item Not Found'); } );
 };
 
 module.exports = router;

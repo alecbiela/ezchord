@@ -1,4 +1,4 @@
-//chordversion v.1.1
+//chordversion v.1.2
 //by Alec Bielanos, please don't steal my things
  
 'use strict';
@@ -147,14 +147,14 @@
 	function sendAjax(e) {
 	
 		//let the user know we're searching
-		$('#status').html("Searching...");
+		//$('#status').html("Searching...");
 		
 		//get data from the form 
 		var action = document.querySelector("#proxyForm").getAttribute("action");
 		var artist = document.querySelector("#bName").value;
 		var song = document.querySelector("#sName").value;
 		
-		//if no data, print error and don't do ajax
+		//if no data, print error and don't do ajax (maybe move to server side?)
 		if((!artist && !song) || (artist.length === 0 && song.length === 0))
 		{			
 			$('#status').html("Please enter something to search!");
