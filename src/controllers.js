@@ -1,6 +1,7 @@
 //controllers.js
 //handles requests
 const searcher = require('./tabSearcher.js');
+const scraper = require('./tabScraper.js');
 const path = require('path');
 
 // returns index.html page
@@ -28,10 +29,16 @@ const searchTabs = (req, res) => {
   searcher(req, res);
 };
 
+//scrapes a tab
+const scrapeTab = (req, res) => {
+  scraper(req, res);
+};
+
 module.exports = {
   loadCSS,
   getIndex,
   loadFont,
   loadJS,
-  searchTabs
+  searchTabs,
+  scrapeTab
 };

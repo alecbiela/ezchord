@@ -1,3 +1,17 @@
+10.15.17
+-Added Chord click functionality
+  >All chords in scraped tab are now clickable
+  >Shows guitar or piano depending on dropdown
+
+
+10.14.17
+-Added scrape functionality of search results
+  >Converted to ES6
+  >Switched to ultimate-guitar-scraper's implementation of scrape,
+   instead of YQL (no longer supported)
+  >Chord viewing doesn't work currently, will be added soon
+
+
 10.13.17
 -Added js back to frontend
   > Backend router handles js file and font file

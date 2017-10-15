@@ -85,7 +85,7 @@
 	function sendScrapeRequest(e)
 	{
 		//let the user know we heard their button press
-		$('#status').html("Retrieving Tab...");
+		//$('#status').html("Retrieving Tab...");
 		
 		//get user selection
 		var data = currentSelectionID;
@@ -96,7 +96,7 @@
 		setSongInfo(selectedTitle, selectedArtist);
 		
 		//normal ajax stuff, set up REST style get query
-		var action = document.querySelector("#proxyForm").getAttribute("action");
+		var action = '/scrapeTab';
 		var query = "scrape=" + encodeURIComponent( $('#' + data).find('.searchResultURL').html() );		
 		var url = action + "?" + query;		
 		var xhr = new XMLHttpRequest();
@@ -118,7 +118,7 @@
 				document.querySelector("#tabResults").innerHTML = xhr.responseText;
 				
 				//attach class 'chord' to everything that Ultimate Guitar recognizes as a 'chord'
-				$('.js-tab-content > span').each(function(){				
+				$('#tabResults > span').each(function(){				
 					$(this).addClass('chord');
 				});
 				
@@ -128,7 +128,7 @@
 				$('#searchBox').slideUp(800).promise().done(function(){ 
 					$('#songInfo').fadeIn(1300);
 					$('#tabResults').fadeIn(1300);
-				});
+				}); 
 			}
 			else{
 				$('#status').html("Internal Server Error... Reload Page and Try Again.");
