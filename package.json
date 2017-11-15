@@ -12,7 +12,7 @@
   "dependencies": {
     "cheerio": "^0.22.0",
     "chord-magic": "^1.0.0",
-    "request": "^2.78.0"
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "express": "^4.16.2",
