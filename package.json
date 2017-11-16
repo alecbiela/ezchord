@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "A Web Service for IGME330 Project III",
   "main": "server.js",
+  "engines": {
+    "node": "7.5.0",
+    "npm": "4.0.5"
+  },
   "scripts": {
     "start": "node ./src/server.js",
     "test": "echo \"Tests complete\""
